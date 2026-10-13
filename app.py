@@ -31,13 +31,6 @@ ADMIN_ID_STR = os.getenv('8557470100')
 YOUR_USERNAME = os.getenv('@BGMIHACKERROLA')
 UPDATE_CHANNEL = os.getenv('https://t.me/bgmihack4or5')
 
-if not TOKEN:
-    logger.error("BOT_TOKEN not found in environment variables!")
-
-if not OWNER_ID_STR or not ADMIN_ID_STR:
-    logger.error("OWNER_ID or ADMIN_ID not found in environment variables!")
-    raise ValueError("OWNER_ID and ADMIN_ID are required. Please set them in .env file.")
-
 try:
     OWNER_ID = int(OWNER_ID_STR)
     ADMIN_ID = int(ADMIN_ID_STR)
