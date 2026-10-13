@@ -33,7 +33,6 @@ UPDATE_CHANNEL = os.getenv('https://t.me/bgmihack4or5')
 
 if not TOKEN:
     logger.error("BOT_TOKEN not found in environment variables!")
-    raise ValueError("BOT_TOKEN is required. Please set it in .env file or environment variables.")
 
 if not OWNER_ID_STR or not ADMIN_ID_STR:
     logger.error("OWNER_ID or ADMIN_ID not found in environment variables!")
